@@ -1,6 +1,6 @@
 # Resultados y decisiones
 
-Resultados oficiales del servidor con `openai/gpt-oss-120b`, temperatura fijada por la organización. El set público tiene 20 casos; el oculto, 32. Los resultados locales con Qwen son exploratorios y no se comparan como puntajes oficiales.
+Registré estos resultados oficiales del servidor con `openai/gpt-oss-120b` y la temperatura fijada por la organización. El set público tiene 20 casos y el oculto, 32. Mis resultados locales con Qwen son exploratorios; no los comparo como puntajes oficiales.
 
 | Versión | Público | Oculto | Decisión |
 | --- | ---: | ---: | --- |
@@ -12,4 +12,4 @@ En el oculto, v12 obtuvo un 100 % en un paso (8/8), 37,5 % en varios pasos (3/8)
 
 La primera prueba pública de v12 fue afectada por respuestas `HTTP 429` del proveedor del modelo; no se usó para juzgar el prompt. Una repetición sin esos errores dio 20/20.
 
-Se preparó un conjunto exploratorio de 20 paráfrasis colombianas en [casos_colombianos.jsonl](casos_colombianos.jsonl). La corrida local v7 obtuvo 4/20 con Qwen2.5-16k; por usar otro modelo y una mezcla de categorías distinta, sirve para descubrir errores, no para estimar el puntaje oficial. No se entrenó ni ajustó ningún modelo con corpus externos.
+Preparé un conjunto exploratorio de 20 paráfrasis colombianas en [casos_colombianos.jsonl](casos_colombianos.jsonl). En la corrida local v7 obtuve 4/20 con Qwen2.5-16k; como usé otro modelo y una mezcla de categorías distinta, me sirvió para buscar errores, no para estimar el puntaje oficial. No entrené ni ajusté ningún modelo con corpus externos.

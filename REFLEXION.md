@@ -6,7 +6,7 @@
 
 ## Qué quería lograr
 
-Quería que el copiloto ejecutara las acciones del carro, en vez de limitarse a prometerlas; que preguntara cuando una petición cambiara de sentido según la respuesta; y que sonara colombiano sin repetir “parce” ni llenar cada frase de modismos. Al principio pensé en entrenarlo con conjuntos de voz y pronunciación. Al leer el README confirmé que la evaluación fija el modelo y solo permite editar el prompt; además, se juzgan respuestas y llamadas de herramientas, no audio. Por eso no hice fine-tuning. Preparé un conjunto exploratorio de 20 paráfrasis en `eval/casos_colombianos.jsonl` para cubrir expresiones y situaciones adicionales.
+Quería que el copiloto ejecutara las acciones en vez de prometerlas, aclarara ambigüedades relevantes y sonara colombiano sin exagerar los modismos. Consideré entrenarlo con corpus de voz y pronunciación, pero el README fija el modelo y evalúa texto y llamadas a herramientas. Por eso no hice fine-tuning. Escribí 20 paráfrasis colombianas para explorar situaciones adicionales (`eval/casos_colombianos.jsonl`).
 
 ## Qué cambié y qué pasó
 
